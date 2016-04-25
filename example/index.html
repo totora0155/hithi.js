@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>HithiJS</title>
+  <style>
+    .container {
+      margin: 0 auto;
+      width: 900px;
+    }
+    .b1 {height: 100px}
+    .b2 {height: 130px}
+    .b3 {height: 160px}
+    .b4 {height: 80px}
+    .b5 {height: 70px}
+    .b6 {height: 120px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="test">
+      <div class="b1"></div>
+      <div class="b2"></div>
+      <div class="b3"></div>
+      <div class="b4"></div>
+      <div class="b5"></div>
+      <div class="b6"></div>
+    </div>
+  </div>
+
+  <script src="../dist/hithi.js"></script>
+  <script>
+    hithi('test', {
+      breakpoints: ['10em', '20em', '30em']
+    });
+  </script>
+</body>
+</html>
